@@ -1,0 +1,458 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+  }
+  
+  /* Top Header */
+  .top-header {
+    background-color: #222; /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 14px;
+    height: 33px;
+  }
+  
+  /* Social Icons */
+  .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    transition: tranform;
+  }
+  .social-icons img:hover{
+    transform: scale(1.5);
+  }
+  .fb{
+    height: 5vh;
+  }
+  /* Contact Info */
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: tranform;
+    padding-top: 3px;
+    height: 10px;
+    font-size: large;
+  }
+  .contact-info:hover{
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+ .number{
+    color: white;
+ }
+  .call-button {
+    background-color: #7DB500; /* Green button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .call-button:hover {
+    background-color: #679900; /* Darker green */
+  }
+
+  /* Navigation Bar */
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+    height: 30px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7DB500; /* Green color for logo */
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+  .black{
+    color: black;
+  }
+  
+  .navbar ul li a:hover,
+  .navbar ul li a.active {
+    color: #7DB500; /* Highlight active link */
+    font-weight: bold;
+  }
+
+   /* EXPERT SECTION(3)  */
+   
+   .expert-section {
+    background-color: #9acd32; /* Light green */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    height: 250px;
+  }
+.expert-section h1 {
+    font-size: 2.5em;
+    
+}
+
+.expert-section p {
+    font-size: 1em;
+    margin: 0 0 20px;
+}
+
+.expert-section .read-more {
+    background-color: #f0ad4e; /* Orange button */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+ /* ADVANTAGE SECTION(4)  */
+
+ .advantages-section {
+    text-align: center;
+    padding: 40px 20px;
+    border: grey 1px solid; 
+    
+}
+
+.advantages-section h2 {
+    font-size: 2em;
+    color: #9acd32; /* Green */
+    margin-bottom: 20px;
+}
+
+.advantages-section .advantage-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.advantage-item {
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+}
+
+.advantage-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    
+}
+.greybg{
+  width: 100px;
+    height: 100px;
+    background-color:rgb(230, 230, 230) ;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.advantage-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.advantage-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.about-section {
+    background-color: #ffffffd8;
+
+    width: 100%;
+    margin: 20px auto;
+    
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 390px;
+    color: black;
+}
+
+.about-section h1 {
+    color: #333;
+    text-align: center;
+}
+
+.about-section p {
+    color: black;
+    text-align: justify;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.about-section img {
+display: flex;
+   margin: 20px auto; 
+    width: 450px;
+    border-radius: 5px;
+    float: right;
+    height: 450px;
+    
+}
+
+.read-more1 {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffaa00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.read-more1:hover {
+    background-color: #e69900;
+}
+.image{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -380px;
+    margin-left: 800px; 
+}
+.gr{
+    color: #9acd32;
+}
+   /* SERVICE SECTION(6) */
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 2em;
+    color: #9acd32;
+    margin-bottom: 20px;
+  }
+  
+  .services-section .service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .service-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .service-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 50px;
+  }
+  
+  .service-item p {
+    font-size: 0.9em;
+    /* color: #666; */
+    margin-bottom: 9px;
+  }
+  
+  .service-item .read-more {
+    font-size: 1em;
+    font-weight: bold;
+    color: #8bb92e;
+    text-decoration: underline 2px;
+  }
+  .star1{
+  position: absolute;
+  left: 150px;
+  top: 1470px;
+  }
+  .star2{
+    position: absolute;
+    left: 470px;
+    top: 1470px;
+  }
+  .star3{
+    position: absolute;
+    top: 1470px;
+    left: 790px;
+  }
+  .star4{
+    position: absolute;
+    top: 1470px;
+    left: 1108px;}
+
+    /* POTFOLIO SECTION 7 */
+
+.portfolio-section {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .portfolio-section h2 {
+    font-size: 2em;
+    color: #9acd32;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-section p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-section .portfolio-menu {
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-section .portfolio-menu a {
+    color: #f0ad4e;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;}
+    .portfolio-items {
+        display: flex;
+        justify-content: center;
+        gap: 0; /* No horizontal gap between columns */
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+      }
+      
+      .portfolio-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0; /* No vertical gap between images */
+        padding: 0;
+        margin: 0;
+      }
+      
+      .portfolio-item {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .portfolio-item img {
+        display: block; /* Ensures no extra space below the image */
+        width: 200px; /* Set the desired width of the images */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0;
+        padding: 0;
+        border: none; /* Ensure no borders causing extra space */
+      }
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #4CAF50;
+    margin: 20px 0;
+  }
+  
+  .section-title span {
+    color: black;
+  }
+  
+  .section-description {
+    text-align: center;
+    color:black;
+    margin-bottom: 40px;
+  }
+  
+  .process-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    border: 1px solid  rgb(175, 170, 170);
+  }
+  
+  .process-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .process-step {
+    text-align: center;
+    max-width: 150px;
+  }
+  
+  .step-number {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: solid 2px gray;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 18px;
+  }
+  .step1{
+    width: 60px;
+  }
+  .step2{
+ width: 60px;
+  }
+.step3{
+    width: 60px;
+ }
+
+.step4{
+     width: 60px;
+}
+ .step5{
+     width: 60px;
+} 
+.step6{
+     width: 60px;
+  }                
+  .step-title {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+  }
+  
+  .step-description {
+    color: gray;
+    font-size: 14px;
+  }      
