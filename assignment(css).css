@@ -6,7 +6,7 @@ body {
   
   /* Top Header */
   .top-header {
-    background-color: #222; /* Dark background */
+    background-color: #222;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -38,15 +38,17 @@ body {
     height: 10px;
     font-size: large;
   }
-  .contact-info:hover{
-    font-weight: bold;
-    transform: scale(1.2);
-  }
+  
  .number{
     color: white;
+    transition: tranform;
  }
+ .number:hover{
+  font-weight: bold;
+  transform: scale(1);
+}
   .call-button {
-    background-color: #7DB500; /* Green button */
+    background-color: #7DB500; 
     color: white;
     border: none;
     padding: 5px 10px;
@@ -54,10 +56,22 @@ body {
     border-radius: 5px;
     font-size: 15px;
     font-weight: bold;
+    transition: tranform;
+    animation-name: callbutton;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+}
+@keyframes callbutton {
+    from {background-color:#7DB500;}
+    to {background-color: red;}
   }
+
   
   .call-button:hover {
-    background-color: #679900; /* Darker green */
+    background-color: #679900; 
+    font-weight: bold;
+    transform: scale(1.1);
+  
   }
 
   /* Navigation Bar */
@@ -74,7 +88,7 @@ body {
   .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #7DB500; /* Green color for logo */
+    color: #7DB500; 
     text-transform: uppercase;
     font-weight: bolder;
     
@@ -103,14 +117,14 @@ body {
   
   .navbar ul li a:hover,
   .navbar ul li a.active {
-    color: #7DB500; /* Highlight active link */
+    color: #7DB500; 
     font-weight: bold;
   }
 
    /* EXPERT SECTION(3)  */
    
    .expert-section {
-    background-color: #9acd32; /* Light green */
+    background-color: #9acd32; 
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -127,13 +141,21 @@ body {
 }
 
 .expert-section .read-more {
-    background-color: #f0ad4e; /* Orange button */
+    background-color: #f0ad4e; 
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1em;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
 }
+@keyframes example {
+    from {background-color:#f0ad4e;}
+    to {background-color: red;}
+  }
+
 
  /* ADVANTAGE SECTION(4)  */
 
@@ -146,7 +168,7 @@ body {
 
 .advantages-section h2 {
     font-size: 2em;
-    color: #9acd32; /* Green */
+    color: #9acd32; 
     margin-bottom: 20px;
 }
 
@@ -180,13 +202,16 @@ body {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: #333;
+    margin-left: -48px;
+    
 }
 
 .advantage-item p {
     font-size: 0.9em;
     color: #666;
+    margin-left: -48px;
 }
-
+/* about us section */
 .about-section {
     background-color: #ffffffd8;
 
@@ -231,8 +256,15 @@ display: flex;
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 50px;animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
 }
+@keyframes example {
+    from {background-color:#f0ad4e;}
+    to {background-color: red;}
+  }
+
 
 .read-more1:hover {
     background-color: #e69900;
@@ -289,7 +321,6 @@ display: flex;
   
   .service-item p {
     font-size: 0.9em;
-    /* color: #666; */
     margin-bottom: 9px;
   }
   
@@ -352,17 +383,17 @@ display: flex;
     .portfolio-items {
         display: flex;
         justify-content: center;
-        gap: 0; /* No horizontal gap between columns */
+        gap: 0; 
         padding: 0;
         margin: 0;
-        flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+        flex-wrap: wrap; 
       }
       
       .portfolio-column {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0; /* No vertical gap between images */
+        gap: 0;
         padding: 0;
         margin: 0;
       }
@@ -373,12 +404,12 @@ display: flex;
       }
       
       .portfolio-item img {
-        display: block; /* Ensures no extra space below the image */
-        width: 200px; /* Set the desired width of the images */
-        height: auto; /* Maintain aspect ratio */
+        display: block; 
+        width: 200px; 
+        height: auto; 
         margin: 0;
         padding: 0;
-        border: none; /* Ensure no borders causing extra space */
+        border: none; 
       }
 .section-title {
     text-align: center;
@@ -395,64 +426,5 @@ display: flex;
     text-align: center;
     color:black;
     margin-bottom: 40px;
-  }
+  } 
   
-  .process-section {
-    background-color: #f9f9f9;
-    padding: 20px 0;
-    border: 1px solid  rgb(175, 170, 170);
-  }
-  
-  .process-steps {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .process-step {
-    text-align: center;
-    max-width: 150px;
-  }
-  
-  .step-number {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border: solid 2px gray;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-size: 18px;
-  }
-  .step1{
-    width: 60px;
-  }
-  .step2{
- width: 60px;
-  }
-.step3{
-    width: 60px;
- }
-
-.step4{
-     width: 60px;
-}
- .step5{
-     width: 60px;
-} 
-.step6{
-     width: 60px;
-  }                
-  .step-title {
-    font-size: 16px;
-    margin: 10px 0 5px 0;
-  }
-  
-  .step-description {
-    color: gray;
-    font-size: 14px;
-  }      

@@ -115,6 +115,57 @@ body {
     font-size: 18px;
     color: #333;
   }
+  .jd1{
+    position: absolute;
+    bottom: 70px;
+    left: 400px;
+  }
+  .jd1img{
+    position: absolute;
+    top: 540px;
+    left: 280px;
+  }
+  .jd1p{
+    position: absolute;
+    
+    left: 400px;
+  }
+  .jd2{
+    position: absolute;
+    bottom: 70px;
+    left: 800px;
+  }
+  .jd2p{
+    position: absolute;
+    top: 700;
+    left: 800px;
+  }
+
+  .jd3{
+    position: absolute;
+    top: 665px;
+    left: 400px;
+  }
+  .jd3p{
+    position: absolute;
+    top: 690px;
+    left: 400px;
+  }
+  .jd3img{
+    position: absolute;
+    top: 680px;
+    left: 280px;
+  }
+  .jd4{
+    position: absolute;
+    top: 665px;
+    left: 800px;
+  }
+  .jd4p{
+    position: absolute;
+    top: 690px;
+    left: 800px;
+  }
   .box p {
     font-size: 14px;
     color: #777;
@@ -172,11 +223,29 @@ body {
     background-color: orange;
     color: white;
     cursor: pointer;
+    transition: tranform;
+    animation-name: projectformbutton;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+}
+  
+  
+@keyframes projectformbutton {
+    from {background-color:#7DB500;}
+    to {background-color: red;}
   }
+
   
   .project-form button:hover {
-    background-color: darkorange;
+    background-color: #679900; 
+    font-weight: bold;
+    transform: scale(1.1);
+  
   }
+  
+  /* .project-form button:hover {
+    background-color: darkorange;
+  } */
   
   .form-note {
     font-size: 14px;
